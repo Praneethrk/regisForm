@@ -1,0 +1,70 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("../images/placement.jpg");
+    background-size: cover; 
+}
+#regform{
+    text-align: center;
+}
+fieldset{
+     border-radius: 20px;
+    background-color:floralwhite;
+}
+#para{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1{
+    text-align: center;
+    font-family:cursive;
+    font-style: oblique;
+    text-shadow: 0 0 15px #FF0222;
+}
+    #star{
+    color: red;
+    margin-left: 5px;
+}
+p label{
+    width: 120px;
+    float:left;
+    font-weight: 700;
+    margin-right: 16%;
+}
+
+p label.error{
+    float:none;
+    color: red; 
+    padding-left: 10px; 
+    
+}
+.required{
+    width: 250px;
+    background-color: aliceblue;  
+    display: block;
+}
+#btnsub{
+    width: 125px;
+    background-color:cornflowerblue;
+    font-weight: 700;
+    border-radius: 20px;
+}
+#btnsub:hover{
+    background-color: skyblue;
+}
+#formdiv{
+    opacity: .8; 
+    border-width: 10px;
+    height: 80%;
+   
+}
+#content{
+    opacity: .8;
+    background-color:floralwhite;
+    padding: 10px 10px 10px 10px;
+     border-radius: 20px;
+    border-width: 10px;
+}
+#dialog{
+    display: none;
+}
