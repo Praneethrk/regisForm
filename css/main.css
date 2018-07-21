@@ -1,15 +1,23 @@
 body{
     margin-left: 10%;
     margin-right: 10%;
-    background-image: url("../images/placement.jpg");
+    background-image: url("../images/b&w.jpg");
     background-size: cover; 
+}
+#head3{
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 15px aqua;
 }
 #regform{
     text-align: center;
 }
 fieldset{
-     border-radius: 20px;
+     border-radius: 15px;
     background-color:floralwhite;
+    border:1px solid blue;
+    opacity: .7;
+    display:contents;
 }
 #para{
     margin-left: 20%;
@@ -19,38 +27,48 @@ h1{
     text-align: center;
     font-family:cursive;
     font-style: oblique;
-    text-shadow: 0 0 15px #FF0222;
+    color:white;
+    text-shadow: 0 0 15px aqua;
 }
     #star{
     color: red;
     margin-left: 5px;
 }
 p label{
-    width: 120px;
     float:left;
     font-weight: 700;
-    margin-right: 16%;
+    margin-right: 50%;
 }
 
 p label.error{
-    float:none;
+    float:left;
     color: red; 
-    padding-left: 10px; 
+    margin-right: 10px;
+    margin-top:2px; 
     
 }
 .required{
     width: 250px;
-    background-color: aliceblue;  
+    height: 25px;
+    background-color: white;  
     display: block;
+    border:2px solid white;
+    border-radius:5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    opacity: .9;
 }
 #btnsub{
     width: 125px;
-    background-color:cornflowerblue;
+    background-color:white;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 15px;
+    height: 30px;
 }
 #btnsub:hover{
-    background-color: skyblue;
+    background-color: darkgrey;
+    border: solid white;
+    
 }
 #formdiv{
     opacity: .8; 
@@ -60,11 +78,43 @@ p label.error{
 }
 #content{
     opacity: .8;
-    background-color:floralwhite;
+    background-color:white;
     padding: 10px 10px 10px 10px;
      border-radius: 20px;
     border-width: 10px;
 }
 #dialog{
     display: none;
+    border-radius:10px;
+}
+.ui-dialog,.ui-widget, .ui-widget-content, .ui-corner-all{
+    background-color: red;
+}
+
+.ui-dialog{
+    background-color: #E5E8E8 !important;
+    border: 1px !important;
+    color:black!important;
+    opacity: .95 !important;
+    font-weight: 600 !important; 
+    border-radius: 10px !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #CCD1D1;
+    font-size: 18px;
+    font-weight:bolder;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    background-color:darkred;
+}
+
+form{
+    padding: 5px 5px 5px 5px;
+    background-image: url(../images/black.jpeg) ;
+    background-size:cover;
+    opacity:.89;
+    color: white;
+    border-radius: 5px;
 }

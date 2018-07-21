@@ -17,7 +17,7 @@
         <h1>Placement Registration Form</h1><hr/><br/> 
         <button id="btnsub" class="regstu" style="'float:right;margin-bottom:10px'">Register Now</button>   
         <div id="dialog">
-        <form id="regform">
+        <form id="regform" name="formStart">
           <fieldset>
            <p id="para">
             <label>USN:<span id="star">*</span></label>
@@ -26,7 +26,7 @@
            <p id="para">
             <label>Name:<span id="star">*</span></label>
             <input type="text" name="name" id="name" class="required inpreg"/>
-           </p ><br/>
+           </p >
            <p id="para">
             <label>Email:<span id="star">*</span></label>
             <input type="text" name="email" id="email" class="required inpreg"/>
@@ -37,7 +37,7 @@
            </p>
            <p id="para">
             <label>Course:<span id="star">*</span></label>
-            <select name="course" id="course" class="required inpreg" >
+            <select name="course" id="course" class="required inpreg branch" >
                 <option value="">Select Course</option>
                 <option value="ise">ISE</option>
                 <option value="cse">CSE</option>

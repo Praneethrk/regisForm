@@ -6,8 +6,9 @@ $(function(){
     showRegisteredStudents();
     
     dialog = $("#dialog").dialog({
+        title:"Registration Form",
         autoOpen:false,
-        height:600,
+        height:590,
         width:500,
         modal:true,
     });
@@ -20,6 +21,10 @@ $(function(){
         changeYear:true,
         changeMonth:true,
         maxDate: "0d"
+    });
+    
+    $(".reset").click(function(){
+        document.formStart.reset();
     });
     
     $(".submit").click(function(){
@@ -119,7 +124,7 @@ $(function(){
             updateLocalStorageData(students);
             dialog.dialog("close");
             showRegisteredStudents();
-            return false;
+            document.formStart.reset();
         }
   }); 
     function showRegisteredStudents(){
@@ -127,7 +132,7 @@ $(function(){
         var data = "";
         
         if(students.length == 0)
-            data = "<h3>No Students Register yet...</h3>";
+            data = "<h2 id=head3>No Students Register yet...</h2>";
         else{
             data +="<table id='registeredstud'><thead><tr>";
             data += "<th>#</th>";
@@ -142,7 +147,7 @@ $(function(){
             
             for(var i=0;i<students.length;i++){
                 var j = i +1 ;
-                data += "<tr>";
+                data += "<tbody><tr>";
                 data += "<td>"+j+"</td>";
                 data += "<td>"+students[i].usn+"</td>";
                 data += "<td>"+students[i].name+"</td>";
@@ -151,9 +156,9 @@ $(function(){
                 data += "<td>"+students[i].course+"</td>";
                 data += "<td>"+students[i].percentage+"</td>";
                 data += "<td>"+students[i].dob+"</td>";
-                
+                data += "</tr>";
             }
-            data +="</table>";
+            data +="</tbody></table>";
         }
     $("#content").html(data);
         $("#registeredstud").dataTable({
