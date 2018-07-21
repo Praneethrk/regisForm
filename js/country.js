@@ -37,7 +37,7 @@ $(function(){
         if(countryInfo.length == 0)
             data = "<h2 id=head3>No Data Available...</h2>";
         else{
-            data +="<table id='registeredstud'><thead><tr>";
+            data +="<table id='countryTable'><thead><tr>";
             data += "<th>#</th>";
             data += "<th>Name</th>";
             data += "<th>Capital</th>";
@@ -54,12 +54,12 @@ $(function(){
                 data += "<td>"+countryInfo[i].capital+"</td>";
                 data += "<td>"+countryInfo[i].alpha3Code+"</td>";
                 data += "<td>"+countryInfo[i].region+"</td>";
-                data += "<td><img src='"+countryInfo[i].flag+"'/></td>";
+                data += "<td><img class='image' src='"+countryInfo[i].flag+"'/></td>";
                 data += "</tr>";
             }
             data +="</tbody></table>";
             $("#content").html(data);
-            $("#countryInfo").dataTable();
+            $("#countryTable").dataTable();
         }
     }
 });
